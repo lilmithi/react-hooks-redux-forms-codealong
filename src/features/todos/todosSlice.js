@@ -7,6 +7,7 @@ const todosSlice = createSlice({
   },
   reducers: {
     todoAdded(state, action) {
+      state.entities.push(action.payload)
       // update meeee
     },
   },
